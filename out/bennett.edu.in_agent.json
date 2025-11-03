@@ -1,0 +1,445 @@
+{
+  "Company": {
+    "legal_name": "Bennett University",
+    "description": "Find out about best UG/PG colleges in Delhi NCR for engineering, management, law, journalism & mass communication and know more about admission procedure, eligibility criteria, fee structure, Campus Placement & life at Bennett University.",
+    "tagline": "Welcome toBennett University",
+    "contacts": [
+      {
+        "kind": "other",
+        "email": "admissions@bennett.edu.in"
+      },
+      {
+        "kind": "other",
+        "email": "info@bennett.edu.in"
+      },
+      {
+        "kind": "other",
+        "phone": "18001038484"
+      },
+      {
+        "kind": "other",
+        "phone": "01207199300"
+      },
+      {
+        "kind": "other",
+        "phone": "1800103-8484"
+      }
+    ],
+    "hq": {
+      "street": "Bennett University, Plot Nos 8-11, TechZone II, Greater Noida 201310, Uttar Pradesh, India"
+    },
+    "locations": [
+      {
+        "street": "Bennett University, Plot Nos 8-11, TechZone II, Greater Noida 201310, Uttar Pradesh, India"
+      },
+      {
+        "street": "TechZone II,Greater Noida",
+        "city": "Bennett University, Plot Nos 8-11",
+        "state": "Uttar Pradesh, India",
+        "postal_code": "201310"
+      },
+      {
+        "street": "Plot Nos 8-11, TechZone II",
+        "city": "Greater Noida,",
+        "state": "Uttar Pradesh",
+        "postal_code": "201310",
+        "country": "India"
+      },
+      {
+        "street": "Plot Nos 8-11, TechZone II",
+        "city": "Greater Noida",
+        "state": "Uttar Pradesh",
+        "postal_code": "201310",
+        "country": "India"
+      }
+    ],
+    "industry": "organization"
+  },
+  "Websites": {
+    "primary": "https://www.bennett.edu.in/",
+    "alternates": [
+      "https://bennett.edu.in",
+      "http://bennett.edu.in",
+      "https://www.bennett.edu.in",
+      "http://www.bennett.edu.in",
+      "https://www.bennett.edu.in/"
+    ],
+    "microsites": [
+      "https://applications.bennett.edu.in",
+      "https://alumni.bennett.edu.in",
+      "https://library.bennett.edu.in",
+      "https://intranet.bennett.edu.in",
+      "https://research.bennett.edu.in"
+    ],
+    "sitemaps": [
+      "https://www.bennett.edu.in/sitemap_index.xml",
+      "https://www.bennett.edu.in/sitemap.xml"
+    ],
+    "tech_stack": [
+      {
+        "name": "WP Rocket 3.18.3",
+        "category": "generator",
+        "detected_from": "meta[name=generator]"
+      },
+      {
+        "name": "Bootstrap",
+        "category": "ui",
+        "detected_from": "https://www.bennett.edu.in/wp-content/themes/twentysixteen/cdn/css/bootstrap.min.css?ver=6.2.2"
+      }
+    ],
+    "schema_org": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "location": {
+          "@type": "Place",
+          "address": "Bennett University, Plot Nos 8-11, TechZone II, Greater Noida 201310, Uttar Pradesh, India"
+        },
+        "description": "Find out about best UG/PG colleges in Delhi NCR for engineering, artificial intelligence ,management, law, journalism &amp; mass communication and know more about admission procedure, eligibility criteria, fee structure, Campus Placement &amp; life at Bennett University.",
+        "name": "Bennett University",
+        "email": "info@bennett.edu.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bennett.edu.in/wp-content/themes/twentysixteen/images/bu-logo.jpg",
+          "width": 600,
+          "height": 60
+        },
+        "url": "https://www.bennett.edu.in/",
+        "sameAs": [
+          "https://www.facebook.com/bennettuniversity/",
+          "https://twitter.com/bennettuniv",
+          "https://www.instagram.com/bennettuniv/",
+          "https://www.linkedin.com/school/bennett-university/",
+          "https://www.youtube.com/channel/UCHfIzAGikq-VCo60xvl_VLQ"
+        ]
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "CollegeOrUniversity",
+        "url": "https://www.bennett.edu.in/",
+        "name": "Bennett University",
+        "logo": "https://www.bennett.edu.in/wp-content/uploads/2017/06/contact-banner.jpg",
+        "description": "Find out about best UG/PG colleges in Delhi NCR for engineering, artificial intelligence ,management, law, journalism &amp; mass communication and know more about admission procedure, eligibility criteria, fee structure, Campus Placement &amp; life at Bennett University.",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "1800 103 8484 ",
+            "contactType": "customer service"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/bennettuniversity/",
+          "https://twitter.com/bennettuniv",
+          "https://www.instagram.com/bennettuniv/",
+          "https://www.linkedin.com/school/bennett-university/",
+          "https://www.youtube.com/channel/UCHfIzAGikq-VCo60xvl_VLQ"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bennett University, Plot Nos 8-11",
+          "addressRegion": "Uttar Pradesh, India",
+          "postalCode": "201310",
+          "streetAddress": "TechZone II,Greater Noida"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://www.bennett.edu.in/",
+            "url": "https://www.bennett.edu.in/",
+            "name": "Best UG/PG Colleges in Engineering, Management, Law & Journalism in Delhi NCR, Bennett University",
+            "isPartOf": {
+              "@id": "https://www.bennett.edu.in/#website"
+            },
+            "about": {
+              "@id": "https://www.bennett.edu.in/#organization"
+            },
+            "description": "Find out about best UG/PG colleges in Delhi NCR for engineering, management, law, journalism & mass communication and know more about admission procedure, eligibility criteria, fee structure, Campus Placement & life at Bennett University.",
+            "breadcrumb": {
+              "@id": "https://www.bennett.edu.in/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://www.bennett.edu.in/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.bennett.edu.in/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.bennett.edu.in/#website",
+            "url": "https://www.bennett.edu.in/",
+            "name": "Bennett University",
+            "description": "",
+            "publisher": {
+              "@id": "https://www.bennett.edu.in/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.bennett.edu.in/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.bennett.edu.in/#organization",
+            "name": "Bennett University",
+            "url": "https://www.bennett.edu.in/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://www.bennett.edu.in/#/schema/logo/image/",
+              "url": "https://www.bennett.edu.in/wp-content/uploads/2019/10/Bennett-University-logo1-.png",
+              "contentUrl": "https://www.bennett.edu.in/wp-content/uploads/2019/10/Bennett-University-logo1-.png",
+              "width": 1527,
+              "height": 510,
+              "caption": "Bennett University"
+            },
+            "image": {
+              "@id": "https://www.bennett.edu.in/#/schema/logo/image/"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://www.schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Bennett University(BU)",
+        "url": "https://www.bennett.edu.in/",
+        "logo": "https://www.bennett.edu.in/wp-content/uploads/2023/05/Bennett_Logo.png",
+        "image": "https://www.bennett.edu.in/wp-content/uploads/2023/05/campus-pic.png",
+        "description": "Bennett University (BU) is One of the Best University in Delhi/NCR, Offering Various Courses in Engineering, Information Technology, Management, Law and Journalism. Call Now 1800-103-8484",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Plot Nos 8-11, TechZone II",
+          "addressLocality": "Greater Noida,",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "201310",
+          "addressCountry": "India"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Bennett University(BU)",
+        "image": "https://www.bennett.edu.in/wp-content/uploads/2023/05/campus-pic.png",
+        "telephone": "+91-1800 103 8484",
+        "email": "info@bennett.edu.in",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Plot Nos 8-11, TechZone II",
+          "addressLocality": "Greater Noida",
+          "addressRegion": "Uttar Pradesh",
+          "addressCountry": "India",
+          "postalCode": "201310"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "url": "https://www.bennett.edu.in/"
+      }
+    ]
+  },
+  "SocialProfiles": [
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/bennettuniversity/",
+      "handle": "bennettuniversity"
+    },
+    {
+      "platform": "twitter",
+      "url": "https://twitter.com/bennettuniv",
+      "handle": "bennettuniv"
+    },
+    {
+      "platform": "linkedin",
+      "url": "https://www.linkedin.com/school/bennett-university/",
+      "handle": "bennett-university"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/bennettuniv/",
+      "handle": "bennettuniv"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCHfIzAGikq-VCo60xvl_VLQ",
+      "handle": "channel"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=cm5UADcOt2M",
+      "handle": "watch"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/embed/GTjp4CuQ5-o?start=3",
+      "handle": "embed"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/embed/UHYV3LQ4PBE?start=6",
+      "handle": "embed"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=PZMHnE71cuM",
+      "handle": "watch"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=sphrSTmLkL8",
+      "handle": "watch"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=IveE48gqFDw&t=23s",
+      "handle": "watch"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=dj-rcIp94Bs",
+      "handle": "watch"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=LlE7GqvMjgE",
+      "handle": "watch"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=DJf4VWIsAm4",
+      "handle": "watch"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=JiCS86zzdT8",
+      "handle": "watch"
+    }
+  ],
+  "Products": [],
+  "Services": [],
+  "GoogleBusinessProfile": null,
+  "KnowledgePanel": null,
+  "Rankings": [],
+  "BacklinkMetrics": null,
+  "ReviewAggregates": [],
+  "JobListings": [],
+  "EmployerRatings": [],
+  "SentimentSamples": [],
+  "MediaMentions": [],
+  "Events": [],
+  "MediaAppearances": [],
+  "TechHealthReport": null,
+  "FundingRounds": [],
+  "OpenSourceRepos": [],
+  "Chatbots": [],
+  "Patents": [],
+  "Publications": [],
+  "Mentions": [],
+  "AssessmentScores": {
+    "brand_presence": 100,
+    "products_services": 0,
+    "seo_authority": 50,
+    "social_community": 90,
+    "reputation_reviews": 0,
+    "talent_culture": 0,
+    "overall": 40
+  },
+  "Provenance": [
+    {
+      "json_pointer": "/Company/legal_name",
+      "source_url": "https://www.bennett.edu.in/",
+      "selector": "title",
+      "method": "css",
+      "confidence": 0.6,
+      "captured_at": "2025-11-03T18:02:28Z"
+    },
+    {
+      "json_pointer": "/Company/description",
+      "source_url": "https://www.bennett.edu.in/",
+      "selector": "meta[name=description]",
+      "method": "css",
+      "confidence": 0.7,
+      "captured_at": "2025-11-03T18:02:28Z"
+    },
+    {
+      "json_pointer": "/SocialProfiles",
+      "source_url": "https://www.bennett.edu.in/",
+      "selector": "a[href]",
+      "method": "css",
+      "confidence": 0.7,
+      "captured_at": "2025-11-03T18:02:28Z"
+    },
+    {
+      "json_pointer": "/Websites/schema_org",
+      "source_url": "https://www.bennett.edu.in/",
+      "selector": "script[type=application/ld+json]",
+      "method": "css",
+      "confidence": 0.8,
+      "captured_at": "2025-11-03T18:02:28Z"
+    },
+    {
+      "json_pointer": "/Websites/sitemaps",
+      "source_url": "https://www.bennett.edu.in/robots.txt",
+      "selector": "Sitemap:",
+      "method": "api",
+      "confidence": 0.9,
+      "captured_at": "2025-11-03T18:02:28Z"
+    },
+    {
+      "json_pointer": "/Websites/alternates",
+      "source_url": "https://www.bennett.edu.in/",
+      "method": "llm",
+      "confidence": 0.4,
+      "captured_at": "2025-11-03T18:02:28Z"
+    },
+    {
+      "json_pointer": "/Websites/microsites",
+      "source_url": "https://www.bennett.edu.in/",
+      "selector": "a[href]",
+      "method": "css",
+      "confidence": 0.7,
+      "captured_at": "2025-11-03T18:02:28Z"
+    },
+    {
+      "json_pointer": "/Company/hq",
+      "source_url": "https://www.bennett.edu.in/",
+      "method": "llm",
+      "confidence": 0.5,
+      "captured_at": "2025-11-03T18:02:28Z"
+    },
+    {
+      "json_pointer": "/Company/locations",
+      "source_url": "https://www.bennett.edu.in/",
+      "method": "llm",
+      "confidence": 0.5,
+      "captured_at": "2025-11-03T18:02:28Z"
+    }
+  ],
+  "captured_at": "2025-11-03T18:02:28Z"
+}

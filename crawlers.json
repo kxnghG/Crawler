@@ -1,0 +1,891 @@
+
+
+{
+  "Company": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "legal_name"
+    ],
+    "properties": {
+      "legal_name": {
+        "type": "string"
+      },
+      "aliases": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "description": {
+        "type": "string"
+      },
+      "tagline": {
+        "type": "string"
+      },
+      "industry": {
+        "type": "string"
+      },
+      "founded_year": {
+        "type": "integer",
+        "minimum": 1800,
+        "maximum": 2100
+      },
+      "hq": {
+        "$ref": "#/$defs/Address"
+      },
+      "locations": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/Address"
+        }
+      },
+      "contacts": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/Contact"
+        }
+      },
+      "key_people": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/Person"
+        }
+      },
+      "competitors": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/Competitor"
+        }
+      },
+      "pricing_models": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "Websites": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "primary"
+    ],
+    "properties": {
+      "primary": {
+        "type": "string",
+        "format": "uri"
+      },
+      "alternates": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "microsites": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "sitemaps": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "tech_stack": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/TechItem"
+        }
+      },
+      "schema_org": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/SchemaOrgBlock"
+        }
+      }
+    }
+  },
+  "TechItem": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "detected_from": {
+        "type": "string"
+      }
+    }
+  },
+  "SchemaOrgBlock": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+      "@type": {
+        "type": "string"
+      },
+      "@context": {
+        "type": "string"
+      }
+    }
+  },
+  "Product": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": {
+        "type": "string"
+      },
+      "pricing": {
+        "type": "string"
+      },
+      "images": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  },
+  "Service": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": {
+        "type": "string"
+      },
+      "pricing": {
+        "type": "string"
+      }
+    }
+  },
+  "SocialProfile": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "platform": {
+        "type": "string",
+        "enum": [
+          "facebook",
+          "twitter",
+          "x",
+          "instagram",
+          "linkedin",
+          "youtube",
+          "tiktok",
+          "pinterest",
+          "github",
+          "other"
+        ]
+      },
+      "handle": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "followers": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "engagement_rate": {
+        "type": "number",
+        "minimum": 0
+      },
+      "last_post_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  },
+  "GoogleBusinessProfile": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "place_id": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "rating": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 5
+      },
+      "reviews_count": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "categories": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "address": {
+        "$ref": "#/$defs/Address"
+      },
+      "phone": {
+        "type": "string"
+      }
+    }
+  },
+  "KnowledgePanel": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "entity_name": {
+        "type": "string"
+      },
+      "entity_type": {
+        "type": "string"
+      },
+      "claimed": {
+        "type": "boolean"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "RankingEntry": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "keyword": {
+        "type": "string"
+      },
+      "position": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "search_volume": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "captured_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  },
+  "BacklinkMetrics": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "total_backlinks": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "referring_domains": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "spam_score": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "top_anchors": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "ReviewAggregate": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "site": {
+        "type": "string",
+        "enum": [
+          "google",
+          "g2",
+          "capterra",
+          "glassdoor",
+          "ambitionbox",
+          "trustpilot",
+          "other"
+        ]
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "rating": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 5
+      },
+      "reviews_count": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "last_updated": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  },
+  "JobListing": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "location": {
+        "type": "string"
+      },
+      "department": {
+        "type": "string"
+      },
+      "posted_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "EmployerRating": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "site": {
+        "type": "string",
+        "enum": [
+          "glassdoor",
+          "ambitionbox",
+          "indeed",
+          "other"
+        ]
+      },
+      "rating": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 5
+      },
+      "reviews_count": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "SentimentSample": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "source": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "snippet": {
+        "type": "string"
+      },
+      "sentiment": {
+        "type": "string",
+        "enum": [
+          "positive",
+          "neutral",
+          "negative"
+        ]
+      }
+    }
+  },
+  "MediaMention": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "source": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "published_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  },
+  "Event": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "end_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "MediaAppearance": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": [
+          "podcast",
+          "webinar",
+          "video",
+          "talk",
+          "slides",
+          "other"
+        ]
+      },
+      "title": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "published_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  },
+  "TechHealthReport": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "performance": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "accessibility": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "best_practices": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "seo": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "report_url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "FundingRound": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "round": {
+        "type": "string",
+        "enum": [
+          "seed",
+          "angel",
+          "series_a",
+          "series_b",
+          "series_c",
+          "series_d",
+          "series_e",
+          "debt",
+          "grant",
+          "private_equity",
+          "ipo",
+          "other"
+        ]
+      },
+      "amount": {
+        "type": "number",
+        "minimum": 0
+      },
+      "currency": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string",
+        "format": "date"
+      },
+      "investors": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "OpenSourceRepo": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "platform": {
+        "type": "string",
+        "enum": [
+          "github",
+          "gitlab",
+          "bitbucket",
+          "other"
+        ]
+      },
+      "org_or_user": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "stars": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  },
+  "Chatbot": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "provider": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "capabilities": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "Patent": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "number": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "filing_date": {
+        "type": "string",
+        "format": "date"
+      }
+    }
+  },
+  "Publication": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "venue": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "published_at": {
+        "type": "string",
+        "format": "date"
+      }
+    }
+  },
+  "Mention": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "source": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "context": {
+        "type": "string"
+      },
+      "sentiment": {
+        "type": "string",
+        "enum": [
+          "positive",
+          "neutral",
+          "negative"
+        ]
+      },
+      "captured_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  },
+  "AssessmentScores": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "brand_presence": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "products_services": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "seo_authority": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "social_community": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reputation_reviews": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "talent_culture": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "overall": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      }
+    }
+  },
+  "Address": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "street": {
+        "type": "string"
+      },
+      "city": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string"
+      },
+      "postal_code": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      }
+    }
+  },
+  "Contact": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "kind": {
+        "type": "string",
+        "enum": [
+          "sales",
+          "support",
+          "press",
+          "partnerships",
+          "general",
+          "other"
+        ]
+      },
+      "name": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "format": "email"
+      },
+      "phone": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "Person": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "linkedin": {
+        "type": "string",
+        "format": "uri"
+      },
+      "email": {
+        "type": "string",
+        "format": "email"
+      }
+    }
+  },
+  "Competitor": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "ProvenanceEntry": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "json_pointer": {
+        "type": "string",
+        "description": "RFC6901 pointer to the field this provenance refers to"
+      },
+      "source_url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "selector": {
+        "type": "string",
+        "description": "CSS/XPath selector used"
+      },
+      "method": {
+        "type": "string",
+        "enum": [
+          "css",
+          "xpath",
+          "regex",
+          "api",
+          "llm",
+          "manual"
+        ]
+      },
+      "confidence": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "captured_at": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "json_pointer",
+      "source_url"
+    ]
+  }
+}
